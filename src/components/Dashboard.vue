@@ -17,15 +17,15 @@
     </div>
     <div class="relative flex items-center justify-center py-5 w-full">
       <button
-        class="w-1/4 bg-slate-700 rounded-s-xl px-6 py-2 border-r border-slate-500 hover:bg-blue-200 hover:text-blue-700 font-semibold"
-        :class="isUp ? 'bg-blue-200 text-blue-700' : ''"
+        class="w-1/4 rounded-s-xl px-6 py-2 border-r border-slate-500 hover:bg-blue-200 hover:text-blue-700 font-semibold"
+        :class="isUp === true ? 'bg-blue-200 text-blue-700' : ' bg-slate-700'"
         @click="setIsUp(true)"
       >
         BULL
       </button>
       <button
-        class="w-1/4 bg-slate-700 rounded-e-xl px-6 py-2 border-l border-slate-500 hover:bg-yellow-200 hover:text-yellow-700 font-semibold"
-        :class="isUp === false ? 'bg-yellow-200 text-yellow-700' : ''"
+        class="w-1/4 rounded-e-xl px-6 py-2 border-l border-slate-500 hover:bg-yellow-200 hover:text-yellow-700 font-semibold"
+        :class="isUp === false ? 'bg-yellow-200 text-yellow-700' : ' bg-slate-700'"
         @click="setIsUp(false)"
       >
         BEAR
